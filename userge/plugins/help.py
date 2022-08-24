@@ -65,14 +65,22 @@ VOTE = get_collection("VOTES")
 SEEN_BY = get_collection("SEEN_BY")
 REPO_X = InlineQueryResultArticle(
     title="Repo",
-    input_message_content=InputTextMessageContent("**Here's the base repo of HAVOC** "),
+    input_message_content=InputTextMessageContent("**Here's how to setup USERGE-X** "),
+    url="https://github.com/ashwinstr/UX-jutsu",
     description="Setup Your Own",
-    thumb_url="https://telegra.ph/file/691226ed373af98a92434.jpg",
+    thumb_url="https://telegra.ph/file/8fa91f9c7f6f4f6b8fa6c.jpg",
     reply_markup=InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    "🔥 USERGE-X Repo", url="https://github.com/code-rgb/USERGE-X"
+                    "🔥 USERGE-X Repo", url="https://github.com/ashwinstr/UX-jutsu"
+                ),
+                InlineKeyboardButton(
+                    "🚀 Deploy USERGE-X",
+                    url=(
+                        "https://heroku.com/deploy?template="
+                        "https://github.com/ash/MyGpack"
+                    ),
                 ),
             ]
         ]
@@ -92,7 +100,7 @@ async def _init() -> None:
         Config.NEW_ALIVE_MEDIA = media_["url"]
         Config.ALIVE_MEDIA_TYPE = media_["type"]
     else:
-        Config.NEW_ALIVE_MEDIA = "https://telegra.ph/file/691226ed373af98a92434.jpg"
+        Config.NEW_ALIVE_MEDIA = "https://telegra.ph/file/1fb4c193b5ac0c593f528.jpg"
         Config.ALIVE_MEDIA_TYPE = "photo"
 
 
@@ -231,7 +239,7 @@ if userge.has_bot:
             await callback_query.answer("you are in main menu", show_alert=True)
             return
         if len(pos_list) == 2:
-            text = " HAVOC MAIN MENU "
+            text = " 𝐒𝐇𝐀𝐑𝐈𝐍𝐆𝐀𝐍 MAIN MENU "
             buttons = main_menu_buttons()
         elif len(pos_list) == 3:
             text, buttons = category_data(cur_pos)
@@ -1225,9 +1233,10 @@ if userge.has_bot:
 
             MAIN_MENU = InlineQueryResultArticle(
                 title="Main Menu",
-                input_message_content=InputTextMessageContent(" HAVOC MAIN MENU "),
-                description="HAVOC Main Menu",
-                thumb_url="https://telegra.ph/file/691226ed373af98a92434.jpg",
+                input_message_content=InputTextMessageContent(" 𝐒𝐇𝐀𝐑𝐈𝐍𝐆𝐀𝐍 MAIN MENU "),
+                url="https://github.com/ashwinstr/UX-jutsu",
+                description="Sharingan Main Menu",
+                thumb_url="https://telegra.ph/file/8fa91f9c7f6f4f6b8fa6c.jpg",
                 reply_markup=InlineKeyboardMarkup(main_menu_buttons()),
             )
             results.append(MAIN_MENU)

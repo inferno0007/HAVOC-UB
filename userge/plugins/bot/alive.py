@@ -65,7 +65,7 @@ async def set_alive_media(message: Message):
         if found:
             media_ = found["url"]
         else:
-            media_ = "https://telegra.ph/file/691226ed373af98a92434.jpg"
+            media_ = "https://telegra.ph/file/1fb4c193b5ac0c593f528.jpg"
         return await message.edit(f"The alive media is set to [<b>THIS</b>]({media_}).")
     elif "-r" in message.flags:
         if not found:
@@ -289,7 +289,7 @@ class Bot_Alive:
 
   🐍   <b>Python      :</b>    <code>v{versions.__python_version__}</code>
   🔥   <b>Pyrogram :</b>    <code>v{versions.__pyro_version__}</code>
-  🧬   <b>HAVOC            :</b>    <code>v{get_version()}</code>
+  🧬   <b>𝑿                :</b>    <code>v{get_version()}</code>
   👤   <b>User          :</b>    <code>{u_name}</code>
   <b>{Bot_Alive._get_mode()}</b>        <code>|</code>    🕔  <b>{userge.uptime}</b>
 """
@@ -322,6 +322,10 @@ class Bot_Alive:
     def alive_default_imgs() -> str:
         alive_imgs = [
             "https://telegra.ph/file/11123ef7dff2f1e19e79d.jpg",
+            "https://i.imgur.com/uzKdTXG.jpg",
+            "https://telegra.ph/file/6ecab390e4974c74c3764.png",
+            "https://telegra.ph/file/995c75983a6c0e4499b55.png",
+            "https://telegra.ph/file/86cc25c78ad667ca5e691.png",
         ]
         return rand_array(alive_imgs)
 
