@@ -17,7 +17,7 @@ from userge.utils import mention_html
 from .bot_pm import check_new_bot_user
 
 CHANNEL = userge.getCLogger(__name__)
-PATH = "./userge/xcache/spoiler_db.json"
+PATH = "USERGE-X/userge/xcache/spoiler_db.json"
 BOT_BAN = get_collection("BOT_BAN")
 
 
