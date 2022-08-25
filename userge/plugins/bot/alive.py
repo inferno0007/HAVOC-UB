@@ -310,7 +310,9 @@ class Bot_Alive:
                 InlineKeyboardButton(text="🔧  SETTINGS", callback_data="settings_btn"),
             ],
             [
-                InlineKeyboardButton(text="⚡ BASE REPO", url="https://github.com/code-rgb/USERGE-X"),
+                InlineKeyboardButton(
+                    text="⚡ BASE REPO", url="https://github.com/code-rgb/USERGE-X"
+                ),
             ],
         ]
         return InlineKeyboardMarkup(buttons)
