@@ -175,7 +175,7 @@ if userge.has_bot:
     @userge.bot.on_message(start_filter())
     async def start_bot(_, message: Message):
         c_info = await get_bot_info()
-        bot_ = c_info.get("bot")
+        c_info.get("bot")
         owner_ = c_info.get("owner")
         from_user = await userge.bot.get_user_dict(message.from_user, attr_dict=True)
         if from_user.id in Config.OWNER_ID:
@@ -184,12 +184,12 @@ if userge.has_bot:
             start_msg = f"""
 Hello 👋
 {from_user.fname},
-
 Nice To Meet You !, I'm HAVOC, Mr Neit's Assistant Bot/Userbot
+
 My Master is : {owner_.flname}</b>
 """
             if Config.BOT_FORWARDS:
-                start_msg += "</b>\nYou can 📨 <b>Send Message</b> here to contact my <b>[Master](t.me/Neit_xD).</b>"
+                start_msg += "<b>\n📌 NOTE:</b>\nYou can 📨 <b>Send Message</b> here to contact my <b>Master.</b>"
             contact_url = (
                 f"https://t.me/{owner_.uname}"
                 if owner_.uname
