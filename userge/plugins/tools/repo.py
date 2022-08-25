@@ -24,9 +24,9 @@ async def see_repo(message: Message):
     repo_ = (
         "[GPACK](https://github.com/anonymous-x97/pack)"
         if "-g" in message.flags
-        else f"[UX-JUTSU]({Config.UPSTREAM_REPO})"
+        else f"[Userge-X](https://github.com/code-rgb/USERGE-X)"
     )
-    output = f"• **repo** : {repo_}"
+    output = f"HAVOC is a customized UserBot<br>Made for Personal use only<br>• **Base Repo** : {repo_}"
     if "-p" not in message.flags:
         await message.edit(output, disable_web_page_preview=True)
     else:

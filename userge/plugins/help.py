@@ -66,7 +66,6 @@ SEEN_BY = get_collection("SEEN_BY")
 REPO_X = InlineQueryResultArticle(
     title="Repo",
     input_message_content=InputTextMessageContent("**Here's the base repo of HAVOC** "),
-    url="https://github.com/ashwinstr/UX-jutsu",
     description="Setup Your Own",
     thumb_url="https://telegra.ph/file/691226ed373af98a92434.jpg",
     reply_markup=InlineKeyboardMarkup(
@@ -1227,7 +1226,7 @@ if userge.has_bot:
             MAIN_MENU = InlineQueryResultArticle(
                 title="Main Menu",
                 input_message_content=InputTextMessageContent(" HAVOC MAIN MENU "),
-                description="Sharingan Main Menu",
+                description="HAVOC Main Menu",
                 thumb_url="https://telegra.ph/file/691226ed373af98a92434.jpg",
                 reply_markup=InlineKeyboardMarkup(main_menu_buttons()),
             )
