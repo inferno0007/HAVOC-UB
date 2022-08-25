@@ -1,5 +1,6 @@
-from userge import Message, userge
 from pyrogram.errors import UsernameInvalid
+
+from userge import Message, userge
 
 
 @userge.on_cmd(
@@ -23,7 +24,6 @@ async def jc(message: Message):
         link = link.split("/")[-1]
         await userge.join_chat(link)
     return await message.reply("Joined")
-
 
 
 @userge.on_cmd(
